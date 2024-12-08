@@ -1,0 +1,35 @@
+/*1-¿Tiene una sintaxis y una semántica bien definida? ¿Existe documentación oficial?
+Sí, JavaScript tiene una sintaxis y semántica bien definidas, estandarizadas por ECMAScript (ES). Desde su creación, JavaScript ha evolucionado y se ha documentado extensamente, 
+con ECMAScript proporcionando especificaciones detalladas de cada versión del lenguaje. 
+Esta documentación es oficial y está disponible públicamente, garantizando que los desarrolladores puedan comprender y aplicar correctamente las reglas del lenguaje.*/
+
+/*2-¿Es posible comprobar el código producido en ese lenguaje?
+Sí, el código JavaScript puede ser comprobado mediante diversas herramientas y técnicas. Los linters, como ESLint, 
+permiten a los desarrolladores analizar el código en busca de errores comunes, problemas de estilo, y posibles fallos lógicos antes de que el código sea ejecutado. 
+Además, los entornos de desarrollo modernos suelen integrar herramientas que ayudan a identificar errores en tiempo de escritura. 
+Sin embargo, debido a la naturaleza dinámica de JavaScript, algunos errores solo pueden detectarse en tiempo de ejecución.*/
+
+/*3-¿Es confiable?
+JavaScript es confiable en el sentido de que es ampliamente utilizado y soportado en la mayoría de los navegadores modernos y entornos de ejecución (como Node.js). 
+No obstante, su naturaleza de tipado dinámico y flexibilidad pueden llevar a errores difíciles de rastrear, especialmente en aplicaciones grandes y complejas. 
+El uso de buenas prácticas, como el tipado estático mediante TypeScript, puede mejorar la confiabilidad del código JavaScript.*/
+
+/*4-¿Es ortogonal?
+JavaScript es relativamente ortogonal, lo que significa que las operaciones básicas del lenguaje se comportan de manera consistente en diferentes contextos. 
+Sin embargo, su flexibilidad también introduce algunas inconsistencias, como el uso de == versus === para la comparación de valores, o las peculiaridades del tipo NaN. 
+Estas excepciones a la ortogonalidad pueden requerir una comprensión más profunda para evitar errores.*/
+
+/*5-¿Cuáles son sus características de consistencia y uniformidad?
+JavaScript ha mejorado en consistencia y uniformidad con el tiempo, especialmente desde la introducción de ES6 (ECMAScript 2015), que introdujo características como let, const, 
+y clases. Sin embargo, su evolución histórica y compatibilidad hacia atrás han dejado ciertas inconsistencias. Por ejemplo, la coexistencia de var, let, y const, 
+o las diferencias en la forma en que los objetos y arrays se manejan en comparación con otros tipos de datos.*/
+
+/*6-¿Es extensible? ¿Hay subconjuntos de ese lenguaje?
+JavaScript es extensible en varios sentidos. Se pueden definir nuevas funciones, prototipos, y módulos para extender la funcionalidad del lenguaje. Además, 
+hay subconjuntos y variantes de JavaScript, como TypeScript, que añaden características adicionales (como el tipado estático) mientras siguen siendo compilados a 
+JavaScript para su ejecución. Esta extensibilidad permite a los desarrolladores adaptar el lenguaje a las necesidades específicas de sus proyectos.*/
+
+/*7-El código producido, ¿es transportable?
+Sí, el código JavaScript es altamente transportable. JavaScript es el lenguaje nativo de la web y puede ejecutarse en cualquier navegador moderno sin necesidad de compilación previa. 
+Además, con entornos como Node.js, JavaScript se puede utilizar en el backend, lo que permite la creación de aplicaciones multiplataforma que pueden ser ejecutadas 
+tanto en servidores como en clientes. La portabilidad es una de las principales fortalezas de JavaScript, lo que contribuye a su popularidad en el desarrollo web y móvil.*/

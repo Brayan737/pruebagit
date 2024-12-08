@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+  "target": "ES6", // Compila el código a ES6, lo cual es correcto para proyectos modernos.
+  "lib": ["es2016", "dom"], // Esto habilita características de ES6 y más recientes
+  "module": "CommonJS", // Usa el módulo CommonJS, adecuado para proyectos de Node.js.
+  "rootDir": "./src", // Define que tu código fuente está en la carpeta 'src'.
+  "outDir": "./dist", // La salida compilada del código TypeScript irá a la carpeta 'dist'.
+  "strict": true, // Habilita la verificación estricta para un código más seguro y preciso.
+  "esModuleInterop": true, // Permite la interoperabilidad con módulos ES y CommonJS.
+  "skipLibCheck": true // Omite la verificación de las definiciones de las bibliotecas (mejora el rendimiento).
+  },
+  "include": ["src/**/*.ts"], // Especifica que el código fuente está en la carpeta 'src'
+  "exclude": ["./dist"] // Especifica la carpeta de salida para los archivos compilados
+}
+

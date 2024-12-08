@@ -1,0 +1,50 @@
+1. Generalización simbólica:
+Las reglas escritas del lenguaje en el contexto de programación estructurada son aquellas que delimitan y guían la manera en que los desarrolladores estructuran su código. En TypeScript, bajo este paradigma:
+
+Uso de estructuras de control:
+Bucles (for, while, do-while) para iteración.
+Condicionales (if, else, switch) para control de flujo.
+Estructuras de decisión y repetición que se ajustan a los principios estructurados.
+Funciones:
+Permite la modularización del código usando funciones como bloques lógicos de ejecución.
+En programación estructurada, se evita el uso de funciones anidadas u otros elementos que dificulten la linealidad.
+Restricciones tipadas:
+TypeScript agrega reglas explícitas de tipado estático que permiten un mayor control y seguridad en las operaciones.
+Esto refuerza la idea estructurada de que cada variable tiene un propósito claro y definido.
+Código secuencial:
+Se busca mantener una secuencia lógica sin saltos arbitrarios (como el uso del goto).
+Estas reglas generales aseguran que el código sea predecible y fácil de seguir, cumpliendo los principios del paradigma estructurado.
+
+2. Creencias de los profesionales:
+En TypeScript, ciertas características se perciben como ventajosas, incluso dentro del marco de la programación estructurada:
+
+Sistema de tipos estáticos:
+
+Los desarrolladores creen que TypeScript es "mejor" que JavaScript porque reduce errores durante el desarrollo, gracias a su tipado estático y su capacidad de detectar inconsistencias antes de la ejecución.
+Esto se alinea con la programación estructurada, donde el control y la claridad son esenciales.
+Compatibilidad con JavaScript:
+
+La capacidad de compilarse a JavaScript hace que TypeScript sea útil para quienes buscan las ventajas de un tipado más estricto sin abandonar el ecosistema de JavaScript.
+Módulos:
+
+La modularidad que permite TypeScript refuerza la creencia en la importancia de dividir el programa en bloques funcionales, lo cual es un principio clave de la programación estructurada.
+Legibilidad y mantenibilidad:
+
+TypeScript es considerado más legible y adecuado para proyectos de gran escala que JavaScript puro, lo que refuerza la creencia de que es un lenguaje ideal para la programación estructurada en términos de claridad y mantenimiento.
+3. Valores compartidos:
+Los valores compartidos en la comunidad de TypeScript bajo el paradigma estructurado giran en torno a:
+
+Claridad: El código debe ser comprensible para otros desarrolladores.
+Mantenibilidad: Se valora la creación de código que pueda ser modificado o ampliado fácilmente sin introducir errores.
+Predictibilidad: El comportamiento del programa debe ser claro y controlado.
+Eficiencia: Aunque no es el foco principal, se valora el uso eficiente de recursos manteniendo estructuras claras.
+4. Ejemplares o analogías:
+Un ejemplar es un conjunto de problemas resueltos que se utilizan como modelos dentro de la comunidad. En este caso, en TypeScript dentro de la programación estructurada:
+
+Ejemplos comunes:
+
+La implementación de algoritmos como ordenamiento, búsqueda, y manejo de datos se realiza usando estructuras secuenciales, condicionales y ciclos.
+Los desarrolladores pueden consultar librerías y patrones que usan estas estructuras sin recurrir a paradigmas más avanzados como objetos o funciones de orden superior.
+Analogías a otros lenguajes estructurados:
+
+TypeScript se puede comparar con lenguajes como C o Pascal cuando se utiliza de manera estructurada, dado su énfasis en funciones, estructuras controladas, y uso estricto de tipos.

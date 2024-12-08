@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+  "target": "ES6",
+  "module": "CommonJS",
+  "rootDir": "./src",
+  "outDir": "./dist",
+  "strict": true,
+  "esModuleInterop": true,
+  "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"], // Especifica que el código fuente está en la carpeta 'src'
+  "exclude": ["./dist"] // Especifica la carpeta de salida para los archivos compilados
+}
+

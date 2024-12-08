@@ -1,0 +1,82 @@
+Características de la Programación Orientada a Objetos (OOP) Utilizadas
+1. Abstracción
+En ambos ejercicios, se utilizó la abstracción para modelar conceptos generales como operaciones matemáticas y tareas.
+
+Ejercicio 2: La clase Operacion en el programa de la calculadora actúa como una clase abstracta que encapsula el comportamiento común de todas las operaciones. Define los atributos num1 y num2, y obliga a las subclases a implementar el método operar. Esto permite que las operaciones específicas (suma, resta, etc.) se implementen de manera independiente, enfocándose solo en su lógica particular.
+
+Ejemplo:
+
+typescript
+Copiar código
+export abstract class Operacion {
+    protected num1: number;
+    protected num2: number;
+
+    constructor(num1: number, num2: number) {
+        this.num1 = num1;
+        this.num2 = num2;
+    }
+
+    abstract operar(): void;
+}
+Ejercicio 3: La clase Tarea abstrae los elementos esenciales de una tarea (título, descripción, estado, etc.), lo que facilita su manipulación en diversas operaciones como creación, búsqueda o visualización.
+
+Ejemplo:
+
+typescript
+Copiar código
+export class Tarea {
+    constructor(
+        public titulo: string,
+        public descripcion: string,
+        public estado: string,
+        public dificultad: string,
+        public fechaDeCreacion: Date,
+        public vencimiento: Date | null
+    ) {}
+}
+2. Encapsulamiento
+Se utilizó para proteger los datos y garantizar que solo métodos específicos puedan acceder o modificar ciertos atributos.
+
+Ejercicio 2: Los atributos num1 y num2 de la clase Operacion están protegidos (protected) para que solo las subclases puedan acceder a ellos, evitando acceso directo desde fuera de las clases derivadas.
+
+Ejercicio 3: Aunque los atributos de Tarea son públicos en este caso, las operaciones como creación o modificación están encapsuladas en clases específicas (CrearTarea, BuscarTarea, etc.), lo que asegura que el acceso a los datos sea controlado.
+
+Ejemplo: La función crear en CrearTarea encapsula toda la lógica necesaria para validar y añadir una tarea a la lista.
+
+3. Herencia
+Se utilizó en el Ejercicio 2 para definir un esquema común en la calculadora, pero no se aplicó en el Ejercicio 3, ya que no había una jerarquía natural en el modelo de gestión de tareas.
+
+Ejercicio 2: Las clases Suma, Resta, Multiplicacion y Division heredan de Operacion y sobrescriben el método operar para implementar su lógica específica. Esto evita la duplicación de código y asegura que todas las operaciones sigan el mismo contrato.
+
+Ejemplo:
+
+typescript
+Copiar código
+export class Suma extends Operacion {
+    operar(): void {
+        console.log(`Resultado: ${this.num1} + ${this.num2} = ${this.num1 + this.num2}`);
+    }
+}
+Por qué no se usó en el Ejercicio 3: No había una relación jerárquica natural entre los elementos del sistema (e.g., Tarea, Menu, CrearTarea). Cada clase tenía un propósito único que no requería herencia.
+
+4. Polimorfismo
+Se implementó solo en el Ejercicio 2, donde las operaciones de la calculadora aprovechan el polimorfismo para ejecutar diferentes comportamientos según el tipo de operación seleccionada. Esto permite tratar todas las operaciones como instancias de Operacion y ejecutar su método operar sin preocuparse de la clase específica.
+
+Ejemplo:
+
+typescript
+Copiar código
+const operacion: Operacion = new Suma(5, 3);
+operacion.operar(); // Llama a la implementación específica de Suma
+Por qué no se usó en el Ejercicio 3: Aunque podría haberse implementado polimorfismo para manejar tareas o acciones, el diseño del programa no requería un manejo unificado de múltiples tipos de objetos. Cada acción (CrearTarea, BuscarTarea, etc.) se maneja como una operación separada.
+
+Características de la OOP No Utilizadas
+1. Composición
+En lugar de crear jerarquías complejas, se optó por una composición directa de clases. Por ejemplo, en el Ejercicio 3, el Menu depende de instancias de CrearTarea, BuscarTarea, y MostrarTareas, pero estas no comparten una clase base común.
+
+Por qué no fue necesario: La composición fue suficiente para cumplir con los requisitos sin añadir complejidad innecesaria.
+2. Interfaces
+No se usaron interfaces en ninguno de los ejercicios, ya que las clases abstractas y métodos concretos cumplían con los requisitos de diseño.
+
+Por qué no fue necesario: Las clases en ambos ejercicios tenían implementaciones completas, por lo que no había una necesidad de definir contratos adicionales a través de interfaces.
